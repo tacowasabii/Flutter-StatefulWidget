@@ -13,7 +13,10 @@ class _MyAppState extends State<MyApp> {
   int counter = 0;
 
   void onClicked() {
-    counter = counter + 1;
+    setState(() {
+      //상태 변화를 알려주는 함수
+      counter = counter + 1;
+    });
   }
 
   @override
